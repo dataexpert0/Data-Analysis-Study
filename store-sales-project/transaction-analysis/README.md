@@ -51,11 +51,13 @@ Foi feito um summary() do modelo para avaliar os valores de RMSE e MAE e após c
 **A análise** dos erros foi feita abaixo, entre um modelo e outro.
 
 1. Modelo de ARIMA
+
    <img src = "https://i.imgur.com/EboDvgv.png" width = "500"/>
    <img src = "https://i.imgur.com/470Ls1d.png" width = "500"/>
    <img src = "https://i.imgur.com/lOP166B.png" width = "500"/>
 
-2. Modelo de Holt-Winters
+3. Modelo de Holt-Winters
+
    <img src = "https://i.imgur.com/yiteCWL.png" width = "500"/>
    <img src = "https://i.imgur.com/S0iGraj.png" width = "500"/>
    <img src = "https://i.imgur.com/IFKi5TH.png" width = "500"/>
