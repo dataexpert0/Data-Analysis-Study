@@ -1,4 +1,4 @@
-#Projeto com transações de uma loja (grocery store)
+**Projeto com transações de uma loja (grocery store)**
 
 Essa primeira iniciativa teve como intenção usar os dados de um arquivo "transactions.csv" de transações realizadas ao longo do tempo em uma loja.
 
@@ -27,4 +27,14 @@ O motivo de ter escolhido essa opção foi para estudar melhor a sazonalidade e 
 
 Foi visto através do boxplot que haviam alguns outliers na amostra, os tais valores atípicos.
 
-![image](https://github.com/user-attachments/assets/60b1730c-06e3-4cba-9e1a-3e12044815a7)
+<img src="https://github.com/user-attachments/assets/60b1730c-06e3-4cba-9e1a-3e12044815a7" width="500" />
+
+Esses *outliers* não foram tratados inicialmente, pois para mim, poderiam ser importantes ou especiais nesse contexto, ainda mais lidando com número de transações em certos meses específicos.
+
+Em seguida, foi feito uma análise do ACF (Autocorrelaction Function, ou função de autocorrelação). Isso é para poder ver se existe ou não sazonalidade na série temporal criada. Devido ao fato do comportamento dos lags, e além de que existe um pico no lag 12 e um lag 24 também mais ou menos alto, foi assumido que existe sazonalidade nessa série. Eu já havia presumido pelo fato de envolver transações de uma *loja* em datas específicas, então pode incluir feriados, datas especiais, entre outros, que possam afetar ela.
+
+<img src="https://github.com/user-attachments/assets/60b1730c-06e3-4cba-9e1a-3e12044815a7](https://github.com/user-attachments/assets/40963fb6-7110-447a-af9b-1f43656c3599" width="500"/>
+
+Assim, crio o modelo de Holt-Winters para fazer uma análise de previsão dos meses seguintes e aparentemente, o número de transações despenca.
+
+<img src="https://github.com/user-attachments/assets/60b1730c-06e3-4cba-9e1a-3e12044815a7" width="500"/>
