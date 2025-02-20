@@ -1,4 +1,4 @@
-<h1>**Projeto com transações de uma loja (grocery store)**</h1>
+<h1>Projeto com transações de uma loja (grocery store)</h1>
 <h2>Gráficos: soma das transações feitas em cada dia do mês a cada ano.</h2>
 
 Essa primeira iniciativa teve como intenção usar os dados de um arquivo "transactions.csv" de transações realizadas ao longo do tempo em uma loja.
